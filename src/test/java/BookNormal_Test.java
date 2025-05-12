@@ -1,6 +1,5 @@
 
 import static Utils.Constants.*;
-import static endpoints.Routes.Booking_Url;
 import static io.restassured.RestAssured.given;
 
 

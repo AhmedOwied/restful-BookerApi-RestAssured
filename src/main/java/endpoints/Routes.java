@@ -14,8 +14,8 @@ public class Routes {
 
     //Booking Module
     public static String BASE_URL="https://restful-booker.herokuapp.com";
-    public static String AUTH_Url=BASE_URL+"/auth";
-    public static String Booking_Url=BASE_URL+"/booking";
+    public static String AUTH_URL=BASE_URL+"/auth";
+    public static String Booking_URL=BASE_URL+"/booking";
 
 
 }

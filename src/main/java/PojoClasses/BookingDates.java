@@ -1,5 +1,6 @@
 package PojoClasses;
 
+
 public class BookingDates {
 
     private String checkin;

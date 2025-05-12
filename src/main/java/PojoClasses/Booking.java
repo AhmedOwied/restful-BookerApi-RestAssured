@@ -5,22 +5,24 @@ public class Booking {
     private String lastname;
     private int totalprice;
     private boolean depositpaid;
-    private BookingDates bookingdates;
+    private PojoClasses.BookingDates bookingdates;
     private String additionalneeds;
 
     // Constructors empty
     public Booking() {}
 
     //Constructor With Param
-    public Booking(String firstname, String lastname, int totalprice, boolean depositpaid,
-                   BookingDates bookingdates, String additionalneeds) {
+
+    public Booking(String firstname, String lastname, int totalPrice, boolean depositPaid, BookingDates dates, String additionalNeeds) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.totalprice = totalprice;
-        this.depositpaid = depositpaid;
-        this.bookingdates = bookingdates;
-        this.additionalneeds = additionalneeds;
+        this.totalprice = totalPrice;
+        this.depositpaid = depositPaid;
+        this.bookingdates = dates;
+        this.additionalneeds = additionalNeeds;
     }
+
+
 
     // Getters and Setters
 
@@ -44,16 +46,8 @@ public class Booking {
         return totalprice;
     }
 
-    public void setTotalprice(int totalPrice) {
-        this.totalprice = totalPrice;
-    }
-
-    public BookingDates getBookingdates() {
-        return bookingdates;
-    }
-
-    public void setBookingdates(BookingDates bookingdates) {
-        this.bookingdates = bookingdates;
+    public void setTotalprice(int totalprice) {
+        this.totalprice = totalprice;
     }
 
     public boolean isDepositpaid() {
@@ -64,6 +58,14 @@ public class Booking {
         this.depositpaid = depositpaid;
     }
 
+    public BookingDates getBookingdates() {
+        return bookingdates;
+    }
+
+    public void setBookingdates(BookingDates bookingdates) {
+        this.bookingdates = bookingdates;
+    }
+
     public String getAdditionalneeds() {
         return additionalneeds;
     }
@@ -71,6 +73,7 @@ public class Booking {
     public void setAdditionalneeds(String additionalneeds) {
         this.additionalneeds = additionalneeds;
     }
+
 
     // ... (أضف باقي الـ Getters/Setters بنفس الطريقة)
 }
