@@ -15,6 +15,9 @@
         <selenium.version>4.28.1</selenium.version>
         <testng.version>7.10.2</testng.version>
         <restAssured.version>5.5.0</restAssured.version>
+        <allureTestNg.version>2.29.0</allureTestNg.version>
+        <allureApi.version>2.34.0</allureApi.version>
+        <allureMaven.version>2.12.0</allureMaven.version>
     </properties>
 
     <dependencies>
@@ -47,12 +50,35 @@
             <version>2.18.2</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency> <!--  لو بتستخدم Allure مع  TestNG--><!-- Allure annotations -->
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allureTestNg.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-plugin-api -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-plugin-api</artifactId>
+            <version>${allureApi.version}</version>
+        </dependency>
+
 
     </dependencies>
 
 
     <build>
         <plugins>
+            <plugin><!--To Run Allure through Maven-->
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allureMaven.version}</version>
+                <configuration>
+                    <reportVersion>${allureTestNg.version}</reportVersion>
+                </configuration>
+            </plugin>
+
 
             <plugin> <!--To Run Tests through Maven command -->
                 <groupId>org.apache.maven.plugins</groupId>

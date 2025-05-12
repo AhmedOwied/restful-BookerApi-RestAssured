@@ -41,6 +41,17 @@ public class BookingUtils {
                 .then().log().all().extract().response().as(GetSingleBooking_ResponseModels.class);
     }
 
+
+    public static Response getBookingByIdTT(String id){
+        return given()
+                .contentType(ContentType.JSON)
+                .accept("application/json")
+                .when()
+                .get(Booking_URL+"/"+id)
+                .then().log().all().extract().response();
+    }
+
+
     //TODO::Without Deserialization
     public static Response getBookingByIdII(String id){
         return given()

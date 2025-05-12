@@ -3,7 +3,7 @@
 
     <test name="E2e_UserFlow">
         <classes>
-            <class name=""></class>
+            <class name="E2e.Books_Test"></class>
         </classes>
     </test>
 </suite>

@@ -1,0 +1,1 @@
+{"uuid":"a3308ef7-5ba2-4a80-a361-8cbaaffe6ddf","name":"E2e.Books_Test","children":["128434bb-9780-4226-94e5-085e90c0ab2a"],"befores":[{"name":"Auth","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1747037497002,"stop":1747037501282}],"afters":[],"start":1747037496964,"stop":1747037503758}
